@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Londrina+Outline&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="bg-pink">
+    <div class="fixed-top z-n1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(219, 20, 100)" fill-opacity="1" d="M0,128L12,117.3C24,107,48,85,72,90.7C96,96,120,128,144,133.3C168,139,192,117,216,128C240,139,264,181,288,208C312,235,336,245,360,229.3C384,213,408,171,432,149.3C456,128,480,128,504,149.3C528,171,552,213,576,197.3C600,181,624,107,648,69.3C672,32,696,32,720,69.3C744,107,768,181,792,208C816,235,840,213,864,181.3C888,149,912,107,936,122.7C960,139,984,213,1008,208C1032,203,1056,117,1080,74.7C1104,32,1128,32,1152,74.7C1176,117,1200,203,1224,218.7C1248,235,1272,181,1296,138.7C1320,96,1344,64,1368,85.3C1392,107,1416,181,1428,218.7L1440,256L1440,0L1428,0C1416,0,1392,0,1368,0C1344,0,1320,0,1296,0C1272,0,1248,0,1224,0C1200,0,1176,0,1152,0C1128,0,1104,0,1080,0C1056,0,1032,0,1008,0C984,0,960,0,936,0C912,0,888,0,864,0C840,0,816,0,792,0C768,0,744,0,720,0C696,0,672,0,648,0C624,0,600,0,576,0C552,0,528,0,504,0C480,0,456,0,432,0C408,0,384,0,360,0C336,0,312,0,288,0C264,0,240,0,216,0C192,0,168,0,144,0C120,0,96,0,72,0C48,0,24,0,12,0L0,0Z"></path></svg>
+    </div>
+        <main class="main min-vh-100 w-100 d-flex justify-content-around align-items-center ">
+            <section class="home ">
+                <div class="container">
+                        <div class="row bg-white">
+                            <div class="col-md-6 p-0">
+                                <img src="./images/Untitled design.png" alt="image" class="w-100">
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-around align-items-center">
+                                <div class="form ">
+                                <div class="row text-center">
+                                    <div class="header">
+                                        <h1 class="fw-bold">Smart Login System</h1>
+                                    </div>
+                                    <div class="col-12 my-2">
+                                        <input type="text" id="userName" placeholder="Enter your Name" class="form-control p-2 w-75 m-auto">
+                                    </div>
+                                    <div class="col-12 my-2">
+                                        <input type="email" class="form-control p-2 w-75 m-auto" id="userEmail" placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="col-12 my-2">
+                                        <input type="password" class="form-control p-2 w-75 m-auto" id="userPassword" placeholder="Enter Your Password">
+                                    </div>
+                                    <div class="massages text-center">
+                                        <p id="requireMassage" class="d-none text-danger fs-4 mt-3  fw-bold">All Inputs Are Required</p>
+                                        <p id="successMassage" class="d-none text-success fs-4 mt-3  fw-bold">Success You Can Log In Now </p>
+                                        <p id="repeatMassage" class="d-none text-danger fs-4 mt-3  fw-bold">This Email Is Already Exist</p>
+                                        <p id="wrongName" class="d-none text-danger fs-4 mt-3  fw-bold">This user name is invalid</p>
+                                        <p id="wrongEmail" class="d-none text-danger fs-4 mt-3  fw-bold">This Email is invalid</p>
+                                        <p id="wrongPassword" class="d-none text-danger fs-4 mt-3  fw-bold">This Password is invalid</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" id="signBtn" class="btn m-color rounded-pill w-75 m-3">Sign up</button>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>You have an account? <a href="#" class="color-pink fw-bold" id="logIn">Sign in</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+    <!-- js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signUp.js"></script>
+</body>
+</html>
